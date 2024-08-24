@@ -12,6 +12,12 @@ class PageController extends Controller
 
     }
 
+    public function indirimdekiurun(){
+        return view('frontend.pages.product');
+
+    }
+
+
     public function urundetay(){
         return view('frontend.pages.productdetails');
 

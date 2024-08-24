@@ -2,7 +2,7 @@
 
   @section('content')
 
-    <div class="site-blocks-cover" style="background-image: url(images/hero_1.jpg);" data-aos="fade">
+    <div class="site-blocks-cover" style="background-image: url({{asset($slider->image)}});" data-aos="fade">
       <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
           <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
@@ -26,8 +26,8 @@
               <span class="icon-truck"></span>
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Free Shipping</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+              <h2 class="text-uppercase">Ücretsiz Kargo</h2>
+              <p>Ürünlerinizi ücretsiz kargo ile gönderimini sağlarız</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -35,8 +35,8 @@
               <span class="icon-refresh2"></span>
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Free Returns</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+              <h2 class="text-uppercase">Geri İade</h2>
+              <p>30 gün içinde geri iade sağlıyoruz.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -44,8 +44,8 @@
               <span class="icon-help"></span>
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Customer Support</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+              <h2 class="text-uppercase">Destek</h2>
+              <p>7/24 bize ulaşabilirsiniz.</p>
             </div>
           </div>
         </div>
@@ -56,35 +56,35 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-            <a class="block-2-item" href="#">
+            <a class="block-2-item" href="{{route('kadinurunler')}}">
               <figure class="image">
                 <img src="images/women.jpg" alt="" class="img-fluid">
               </figure>
               <div class="text">
-                <span class="text-uppercase">Collections</span>
-                <h3>Women</h3>
+                <span class="text-uppercase">Giyim</span>
+                <h3>Kadın</h3>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <a class="block-2-item" href="#">
+            <a class="block-2-item" href="{{route('cocukurunler')}}">
               <figure class="image">
                 <img src="images/children.jpg" alt="" class="img-fluid">
               </figure>
               <div class="text">
-                <span class="text-uppercase">Collections</span>
-                <h3>Children</h3>
+                <span class="text-uppercase">Giyim</span>
+                <h3>Çocuk</h3>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <a class="block-2-item" href="#">
+            <a class="block-2-item" href="{{route('erkekurunler')}}">
               <figure class="image">
                 <img src="images/men.jpg" alt="" class="img-fluid">
               </figure>
               <div class="text">
-                <span class="text-uppercase">Collections</span>
-                <h3>Men</h3>
+                <span class="text-uppercase">Giyim</span>
+                <h3>Erkek</h3>
               </div>
             </a>
           </div>
@@ -96,7 +96,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7 site-section-heading text-center pt-4">
-            <h2>Featured Products</h2>
+            <h2>Yeni Eklenen Ürünlerimiz</h2>
           </div>
         </div>
         <div class="row">
@@ -110,7 +110,7 @@
                   <div class="block-4-text p-4">
                     <h3><a href="#">Tank Top</a></h3>
                     <p class="mb-0">Finding perfect t-shirt</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
                     <p class="mb-0">Finding perfect products</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@
                   <div class="block-4-text p-4">
                     <h3><a href="#">Polo Shirt</a></h3>
                     <p class="mb-0">Finding perfect products</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                   <div class="block-4-text p-4">
                     <h3><a href="#">T-Shirt Mockup</a></h3>
                     <p class="mb-0">Finding perfect products</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
                     <p class="mb-0">Finding perfect products</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -172,7 +172,7 @@
       <div class="container">
         <div class="row justify-content-center  mb-5">
           <div class="col-md-7 site-section-heading text-center pt-4">
-            <h2>Big Sale!</h2>
+            <h2>Kampanya</h2>
           </div>
         </div>
         <div class="row align-items-center">
@@ -180,10 +180,9 @@
             <a href="#"><img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
           </div>
           <div class="col-md-12 col-lg-5 text-center pl-md-5">
-            <h2><a href="#">50% less in all items</a></h2>
-            <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2018</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
-            <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
+            <h2>Seçili ürünlerde 50% indirim</h2>
+            <p>Seçili ürünlerde indirim fırsatlarını kaçırmayınız.</p>
+            <p><a href="{{route('indirimdekiurun')}}" class="btn btn-primary btn-sm">İndirimdeki Ürünler</a></p>
           </div>
         </div>
       </div>
